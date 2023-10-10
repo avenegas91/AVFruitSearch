@@ -20,7 +20,7 @@ function showSuggestions(input) {
             listItem.textContent = suggestion;
             listItem.addEventListener('click', () => {
                 searchInput.value = suggestion;
-                suggestions.computedStyleMap.display = 'none';
+                suggestions.style.display = 'none';
             });
             suggestions.appendChild(listItem);
         });
